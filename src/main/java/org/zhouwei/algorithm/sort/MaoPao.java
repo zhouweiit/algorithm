@@ -2,7 +2,9 @@ package org.zhouwei.algorithm.sort;
 
 /**
  *
- * 冒牌排序
+ * 冒泡排序
+ *
+ * 时间复杂度：O(n平方)
  *
  * Created by zhouwei on 2018/5/7.
  */
