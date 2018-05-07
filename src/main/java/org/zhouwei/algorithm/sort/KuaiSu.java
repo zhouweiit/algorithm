@@ -15,23 +15,20 @@ public class KuaiSu {
     public void sort(int a,int b, int value) {
         int i = a, j = b;
         while(true) {
-            if (i == j) {//1. j 大于 value  2.j 等于 value 3. j 小于 value
-                if (number[j] > value) {
+            if (i == j) {
+                if (number[j] >= value) {//大于等于交换
                     number[a] = number[j - 1];
                     number[j - 1] = value;
-                } else if (number[j] < value) {
+                } else if (number[j] < value) {//等于
                     number[a] = number[j];
                     number[j] = value;
-                } else {
-                    number[a] = number[j - 1];
-                    number[j - 1] = value;
                 }
                 break;
             }
-            if (number[i] <= value && i < j) {//如果比value小，则左边数字++
+            if (number[i] <= value && i < j) {//如果比value小，并且 i < j,则左边数字++
                 i++;
             }
-            if (number[j] >= value && j > i) {//如果比value大，则右边数字--
+            if (number[j] >= value && j > i) {//如果比value大，并且 j > i,则右边数字--
                 j--;
             }
             if (number[i] > value && number[j] < value) {//如果同时左边比右边大，右边比左边小，则交换
@@ -41,15 +38,10 @@ public class KuaiSu {
             }
         }
 
-        StringBuilder sb = new StringBuilder();
-        for (int x = 0; x < number.length; x++) {
-            sb.append(number[x]).append(",");
-        }
-        System.out.println(sb.toString());
-
         if (a < j - 1) {
             sort(a, j, number[a]);
         }
+
         if (j + 1 < b) {
             sort(j, b, number[j]);
         }
