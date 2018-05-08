@@ -8,7 +8,7 @@ package org.zhouwei.algorithm.sort;
  *
  * Created by zhouwei on 2018/5/7.
  */
-public class MaoPao {
+public class Bubble {
 
     public int[] number = new int[]{50,10,70,20,55,13,71,99,123,31,45,91,82,50,20,61,78,93};
 
@@ -26,11 +26,11 @@ public class MaoPao {
     }
 
     public static void main(String args[]) {
-        MaoPao maoPao = new MaoPao();
-        maoPao.sort();
+        Bubble bubble = new Bubble();
+        bubble.sort();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < maoPao.number.length; i++) {
-            sb.append(maoPao.number[i]).append(",");
+        for (int i = 0; i < bubble.number.length; i++) {
+            sb.append(bubble.number[i]).append(",");
         }
         System.out.println(sb.toString());
     }

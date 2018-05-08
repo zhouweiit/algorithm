@@ -8,7 +8,7 @@ package org.zhouwei.algorithm.sort;
  * 真他妈太难写了，写到半夜3点才搞定，足足4个小时，太他妈难调试了
  *
  */
-public class KuaiSu {
+public class Quick {
 
     public int[] number = new int[]{50,10,70,20,55,13,71,99,123,31,45,91,82,50,20,61,78,93};
 
@@ -48,11 +48,11 @@ public class KuaiSu {
     }
 
     public static void main(String args[]) {
-        KuaiSu kuaiSu = new KuaiSu();
-        kuaiSu.sort(0,kuaiSu.number.length - 1,kuaiSu.number[0]);
+        Quick quick = new Quick();
+        quick.sort(0,quick.number.length - 1,quick.number[0]);
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < kuaiSu.number.length; i++) {
-            sb.append(kuaiSu.number[i]).append(",");
+        for (int i = 0; i < quick.number.length; i++) {
+            sb.append(quick.number[i]).append(",");
         }
         System.out.println(sb.toString());
     }
