@@ -5,7 +5,7 @@ package org.zhouwei.algorithm.sort;
  *
  * 遍历从两边开始，找一个大于基数与小于基数的数字，然后交换
  *
- * 真他妈太难写了，写到半夜3点才搞定，足足4个小时，太他妈难调试了
+ * @author zhouwei
  *
  */
 public class Quick {
