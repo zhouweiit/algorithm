@@ -2,6 +2,8 @@ package org.zhouwei.algorithm.string;
 
 /**
  *
+ * 查找子串
+ *
  * 朴素算法与KMP算法，都可以用来实现
  *
  * 朴素算法：时间复杂度O(n * m)
